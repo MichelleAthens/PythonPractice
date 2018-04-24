@@ -1,9 +1,7 @@
 <?php
 	
-	//$connection = mysqli_connect("sql2.njit.edu","mmd38","oXsWKSx7","mmd38");    
 		$connection = mysqli_connect("localhost","root","password","mmd38");      
-  //$response = file_get_contents('php://input');
-  //$array  = json_decode($response,true);                       #Get the response
+
 
 	$queue="SELECT * FROM students";
 	$result=mysqli_query($connection,$queue);

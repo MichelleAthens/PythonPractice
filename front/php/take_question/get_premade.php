@@ -1,7 +1,7 @@
 <?php
 #Get everything in premade table
 	$array = array();
-	$connection = mysqli_connect("db718787039.db.1and1.com", "dbo718787039" ,"Hinatachan1!","db718787039");   
+$connection = mysqli_connect("db718787039.db.1and1.com", "dbo718787039" ,"Naruchan!!","db718787039");       
 
 	$queue="SELECT * FROM premade";
 	$result=mysqli_query($connection,$queue);

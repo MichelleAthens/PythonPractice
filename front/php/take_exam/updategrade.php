@@ -6,8 +6,8 @@
 #==============================================================================
 	$array = array();
 
-	$connection = mysqli_connect("db718787039.db.1and1.com", "dbo718787039" ,"Hinatachan1!","db718787039");   
-	$response = file_get_contents('php://input');
+		$connection = mysqli_connect("localhost","root","password","mmd38");      
+		$response = file_get_contents('php://input');
     $array  = json_decode($response,true);                       #Get the response
 #==============================================================================
 	//$array = array("examid" => "1", "examname" => "Final", "professor" => "ryan","username" =>"mmd38","grade" => 83);

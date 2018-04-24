@@ -11,8 +11,7 @@
 	$caseshit		="";
 	$casesmissed ="";
 	$submitted  ="";
-
-	$connection = mysqli_connect("db719674949.db.1and1.com", "dbo719674949" ,"Hinatachan1!","db719674949");   
+		$connection = mysqli_connect("localhost","root","password","mmd38");      
 	$response = file_get_contents('php://input');
     $array  = json_decode($response,true);                       #Get the response
 #==============================================================================

@@ -1,8 +1,7 @@
 <?php
 
 
-	#$con= mysqli_connect("sql2.njit.edu","mmd38","oXsWKSx7","mmd38");    
-	$con = mysqli_connect("db718787039.db.1and1.com", "dbo718787039" ,"Hinatachan1!","db718787039");   
+		$connection = mysqli_connect("localhost","root","password","mmd38");        
 
 	$result = mysqli_query($con,"SELECT * FROM usernames WHERE username like '$username'");
 	$row = mysqli_fetch_assoc($result);
