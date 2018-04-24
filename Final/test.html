@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CodeMirror</title>
+		<link rel="stylesheet" type="text/css" href="codemirror/plugin/codemirror/lib/codemirror.css">
+	</head>
+	<body>
+		    <div><textarea id="code" name="code"></textarea></div>
+
+		<!-- javascript -->
+		<script src="jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="codemirror/plugin/codemirror/lib/codemirror.js"></script>
+		<script src="codemirror/plugin/codemirror/mode/python/python.js"></script>
+
+	</body>
+</html>
+
+
+
+<script language="Javascript">
+
+var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+        mode: {name: "python",
+               version: 3,
+               singleLineStringErrors: false},
+        lineNumbers: true,
+        indentUnit: 4,
+        matchBrackets: true
+    });
+
+</script>
